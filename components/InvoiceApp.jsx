@@ -6,9 +6,9 @@ import Image from "next/image";
 const ModernInvoiceApp = () => {
   const initialInvoiceData = {
     invoiceNo: "DBINV00232",
-    invoiceDate: "Dec 2, 2024",
+    invoiceDate: "Nov 6, 2025",
     billTo: {
-      name: "Nirhra Tech",
+      name: "PRIME Holdings Limited",
       address: "",
       phone: "",
       email: "",
@@ -16,8 +16,14 @@ const ModernInvoiceApp = () => {
     items: [
       {
         id: 1,
-        description: "nirhra-tech app",
-        rate: 800000,
+        description: "Business Card Design",
+        rate: 30000,
+        qty: 1,
+      },
+      {
+        id: 1,
+        description: "1 Business Card Pack (100pcs)",
+        rate: 40000,
         qty: 1,
       },
     ],
@@ -666,7 +672,7 @@ const ModernInvoiceApp = () => {
               </div>
 
               {/* Account Information */}
-              <div>
+              {/* <div>
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-lg font-bold">Account Information</h3>
                   <button
@@ -762,7 +768,7 @@ const ModernInvoiceApp = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Terms and Conditions */}
               <div>
